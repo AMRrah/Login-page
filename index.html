@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body class="firstpage"><div>
+ <div class="ado">   
+  <div>
+  
+      <h1 class="Adobe">Adobe</h1></div>
+      <p class=p>Sign in or create an account</p>
+    
+    <div class="signin">
+      <div>
+        <img class="imag-ado" src="./images/Adobe-icon-png-red.png">
+        <h1>Sign in</h1>
+
+        <p class="user">New user? <span>Create an account</span></p>
+      </div>
+      <form  action="payment.html" name="regForm" onsubmit="return validateForm()"><div>
+        <p >
+          Email address <br />
+          <input
+            type="email"
+            class="input"
+            name="email"
+            placeholder="Email" 
+            required />
+        </p>
+        <p class="password">
+          Password <br />
+          <input
+            type="password"
+            class="input"
+            name="password"
+            placeholder="password"
+            required />
+        </p>
+        <button class="btn-sign"  type="submit" value="signin" onclick=" nextpage()">sign in</button></form>
+        <div class="middle-text">
+          <hr />
+          <p class="or-text">Or</p>
+        </div>
+        <div class="social-sign-in">
+          <button class="input-google">
+            <img src="./images/images.png" alt="google image" />
+            <a href="https://accounts.google.com/signin"
+              >Continue with google</a
+            >
+          </button>
+
+          <button class="input-facebook">
+            <img src="./images/facebook.png" class="img" /><a
+              href="https://www.facebook.com/"
+              >Continue with facebook</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+  </div></body>
+  <footer>
+    <div>
+    <p class="footer" >Copyright © 2025 Adobe. All rights reserved.</p></div>
+  </footer>
+  
+</html>
